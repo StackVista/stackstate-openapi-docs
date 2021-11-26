@@ -1,0 +1,49 @@
+openapi: 3.0.3
+tags:
+  - name: userProfile
+    description: "/user/profile"
+  - name: apiToken
+    description: /user/profile/tokens
+  - name: event
+    description: "/events"
+  - name: scripting
+    description: "/script/execute"
+info:
+  description: StackState's API specification
+  version: 0.0.1
+  title: StackState API
+  license:
+    name: Proprietary
+    url: "https://stackstate.com"
+  contact:
+    name: StackState
+    email: info@stackstate.com
+    url: "https://stackstate.com"
+externalDocs:
+  description: Documentation
+  url: "https://docs.stackstate.com/"
+paths:
+  /user/profile:
+    $ref: "user_profile.api.yaml#/paths/%2Fuser%2Fprofile"
+  /user/profile/tokens:
+    $ref: "user_profile.api.yaml#/paths/%2Fuser%2Fprofile%2Ftokens"
+  /events:
+    $ref: "events.api.yaml#/paths/%2Fevents"
+  /events/{eventId}:
+    $ref: "events.api.yaml#/paths/%2Fevents%2F%7BeventId%7D"
+  /eventTypes:
+    $ref: "events.api.yaml#/paths/%2FeventTypes"
+  /eventSources:
+    $ref: "events.api.yaml#/paths/%2FeventSources"
+  /eventTags:
+    $ref: "events.api.yaml#/paths/%2FeventTags"
+  /script/execute:
+    $ref: "script.api.yaml#/paths/%2Fscript%2Fexecute"
+security:
+  - ApiToken: []
+components:
+  securitySchemes:
+    ApiToken:
+      type: apiKey
+      in: header
+      name: X-API-Token
