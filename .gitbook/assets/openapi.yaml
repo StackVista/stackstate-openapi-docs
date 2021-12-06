@@ -83,20 +83,6 @@ paths:
                 $ref: "#/components/schemas/UserNotFoundError"
         "500":
           $ref: "common.api.yaml#/components/responses/genericServerError"
-  /user/profile/tokens:
-    $ref: "user_profile.api.yaml#/paths/%2Fuser%2Fprofile%2Ftokens"
-  /events:
-    $ref: "events.api.yaml#/paths/%2Fevents"
-  /events/{eventId}:
-    $ref: "events.api.yaml#/paths/%2Fevents%2F%7BeventId%7D"
-  /eventTypes:
-    $ref: "events.api.yaml#/paths/%2FeventTypes"
-  /eventSources:
-    $ref: "events.api.yaml#/paths/%2FeventSources"
-  /eventTags:
-    $ref: "events.api.yaml#/paths/%2FeventTags"
-  /script/execute:
-    $ref: "script.api.yaml#/paths/%2Fscript%2Fexecute"
 security:
   - ApiToken: []
 components:
