@@ -2,12 +2,6 @@ openapi: 3.0.3
 tags:
   - name: userProfile
     description: "/user/profile"
-  - name: apiToken
-    description: /user/profile/tokens
-  - name: event
-    description: "/events"
-  - name: scripting
-    description: "/script/execute"
 info:
   description: StackState's API specification
   version: 0.0.1
@@ -23,7 +17,6 @@ externalDocs:
   description: Documentation
   url: "https://docs.stackstate.com/"
 paths:
-  /user/profile:
   /user/profile:
     get:
       tags:
