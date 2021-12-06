@@ -58,26 +58,6 @@ paths:
                 $ref: "#/components/schemas/UserProfileSaveError"
         "500":
           $ref: "common.api.yaml#/components/responses/genericServerError"
-  /user/profile/tokens:
-    get:
-      tags:
-        - apiToken
-      summary: "Get current user's API tokens"
-      description: "Get all API token of the logged-in user."
-      operationId: getCurrentUserApiTokens
-      responses:
-        "200":
-          $ref: "#/components/responses/apiTokens"
-        "400":
-          description: ""
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/UserNotFoundError"
-        "500":
-          $ref: "common.api.yaml#/components/responses/genericServerError"
-security:
-  - ApiToken: []
 components:
   responses:
     userProfile:
@@ -183,3 +163,5 @@ components:
       required:
         - name
         - token
+security:
+  - ApiToken: []

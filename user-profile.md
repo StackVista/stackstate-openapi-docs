@@ -11,4 +11,3 @@
 [openapi.yaml](<./.gitbook/assets/openapi.yaml>)
 {% endswagger %}
 
-
