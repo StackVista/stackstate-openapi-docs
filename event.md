@@ -1,31 +1,25 @@
 # event
 
-/events
+/user/profile/events
 
 
 
 
-{% swagger src="./.gitbook/assets/openapi.yaml" path="/events" method="post" %}
+{% swagger src="./.gitbook/assets/openapi.yaml" path="/events" method="get" %}
 [openapi.yaml](<./.gitbook/assets/openapi.yaml>)
 {% endswagger %}
 
 
-{% swagger src="./.gitbook/assets/openapi.yaml" path="/events/{eventId}" method="get" %}
+{% swagger src="./.gitbook/assets/openapi.yaml" path="/events/types" method="get" %}
 [openapi.yaml](<./.gitbook/assets/openapi.yaml>)
 {% endswagger %}
 
 
-{% swagger src="./.gitbook/assets/openapi.yaml" path="/eventTypes" method="get" %}
+{% swagger src="./.gitbook/assets/openapi.yaml" path="/events/sources" method="get" %}
 [openapi.yaml](<./.gitbook/assets/openapi.yaml>)
 {% endswagger %}
 
 
-{% swagger src="./.gitbook/assets/openapi.yaml" path="/eventSources" method="get" %}
+{% swagger src="./.gitbook/assets/openapi.yaml" path="/events/tags" method="get" %}
 [openapi.yaml](<./.gitbook/assets/openapi.yaml>)
 {% endswagger %}
-
-
-{% swagger src="./.gitbook/assets/openapi.yaml" path="/eventTags" method="get" %}
-[openapi.yaml](<./.gitbook/assets/openapi.yaml>)
-{% endswagger %}
-

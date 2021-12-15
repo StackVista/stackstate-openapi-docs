@@ -3,4 +3,4 @@
 - [userProfile](user-profile.md)
 - [apiToken](api-token.md)
 - [event](event.md)
-- [scripting](scripting.md)
+- [healthSynchronization](health-synchronization.md)
